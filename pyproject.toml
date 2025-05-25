@@ -1,0 +1,12 @@
+[project]
+name = "codeine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.9.1",
+    "pillow>=11.2.1",
+    "pymupdf>=1.26.0",
+]
