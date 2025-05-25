@@ -9,7 +9,7 @@ BOOK_DIRECTORY = "data/principia"
 @mcp.tool()
 async def get_page(page: int) -> str: 
     """
-    Get a page from the book.
+    Get a png image of the page from the book.
     """
     with open(f"{BOOK_DIRECTORY}/{page:04d}.png", "rb") as f:
         return f.read()
