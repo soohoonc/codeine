@@ -34,3 +34,7 @@ def NatNumber : Type := Nat
 -- def thirtyEight : Type := 38
 /- Good -/
 def thirtyEight : NatNumber := (38: Nat)
+
+theorem ast_1_01 (p q: Prop) : (p → q) = (¬p ∨ q) := by
+  apply propext
+  exact imp_iff_not_or
